@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #15171B;
+  --bg2: #1B1E24;
+  --panel: #1F242B;
+  --panel2: #262C34;
+  --line: #333B45;
+  --line-soft: #2A313A;
+  --text: #E9ECEF;
+  --dim: #9AA4AF;
+  --faint: #6A727B;
+  --amber: #F59E1B;
+  --amber-soft: rgba(245, 158, 27, 0.13);
+  --amber-line: rgba(245, 158, 27, 0.4);
+  --run: #34D399;
+  --run-soft: rgba(52, 211, 153, 0.13);
+  --down: #F2555A;
+  --down-soft: rgba(242, 85, 90, 0.13);
+  --ui: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--ui);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+input, select {
+  font-family: inherit;
+}
+
+a {
+  color: var(--amber);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Loading state */
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--faint);
+}
+
+.loading::after {
+  content: '…';
+  animation: dots 1.4s infinite;
+}
+
+@keyframes dots {
+  0%, 20%, 50%, 80%, 100% { content: '.'; }
+  40% { content: '..'; }
+  60% { content: '...'; }
+}

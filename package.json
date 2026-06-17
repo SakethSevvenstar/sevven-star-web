@@ -1,0 +1,24 @@
+{
+  "name": "sevven-star-floor",
+  "version": "1.0.0",
+  "description": "Sevven Star Industries — Raw material stock & machine uptime tracker",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next": "^14.0.0",
+    "@supabase/supabase-js": "^2.38.0",
+    "recharts": "^2.10.0",
+    "lucide-react": "^0.294.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-next": "^14.0.0"
+  }
+}
